@@ -2,11 +2,10 @@
 # -*- coding: utf-8 -*-
 """
 Script to create a moltemplate for
-tubes with varying cross sections
+tubes with varying cross sections and
+run an MD simulation
 
 @author: Javier E. Santos
-Applied Machine Learning Summer School 2019
-Active Learning for Nanopores Project
 """
 
 
@@ -103,15 +102,7 @@ for case in range(0,num_cases): #loop to run cases
             'mpi': 'openmpi/3.1.2-intel_17.0.6'
             }
 
-    s_dirs_Darwin = {
-            'name': 'Darwin',
-            'molecules':     '../../', #location where methane.lt and trappe1998.lt are stored
-            'moltemplate': 'moltemplate.sh',
-            'packmol': '/projects/lammps_for_al/lammps/tools/packmol/packmol',
-            'lammps': '/projects/lammps_for_al/lammps_installed/bin/lmp',
-            'mpi': 'openmpi/3.1.2-intel_17.0.6'
-            }
-
+    
     s_dirs_jesantosUT = {
             'name': 'jesantos',
             'molecules':     '../../', #location where methane.lt and trappe1998.lt are stored
@@ -122,8 +113,9 @@ for case in range(0,num_cases): #loop to run cases
             }
 
     if sys_name == 'jesantos': s_directories = s_dirs_jesantosUT
-    #if sys_name == 'jesantos': s_directories = s_dirs_jesantos
-    if sys_name == 'Darwin'  : s_directories = s_dirs_Darwin
+    
+    
+    
 
     ###################End of user inputs: proceed with caution (!)
 
