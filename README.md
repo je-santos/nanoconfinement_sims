@@ -1,4 +1,4 @@
-# Training set creation tool
+# Scripts to perform MD simulations in pores of predetermined shapes. 
 The create_trainingset.py script contains instructions to create random cross-sections with random gas density and  wrapper to run 3d lammps NVT simulations
 
 ## Instructions
