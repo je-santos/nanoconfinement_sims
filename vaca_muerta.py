@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Sep  3 10:41:33 2019
-
-@author: jae3287
-"""
-
 # cd /home/jesantos/.local/share/jupyter/runtime
 
 from scipy.ndimage.morphology import distance_transform_edt as e_dist
@@ -17,7 +10,7 @@ import cv2
 
 sys_name = 'jesantos'
 
-s_dirs_Darwin = {
+s_dirs_supercomp = {
             'name': 'Darwin',
             'molecules':     '../../', #location where methane.lt and trappe1998.lt are stored
             'moltemplate': 'moltemplate.sh',
@@ -36,7 +29,7 @@ s_dirs_jesantosUT = {
             }
 
 if sys_name == 'jesantos': s_directories = s_dirs_jesantosUT
-if sys_name == 'Darwin'  : s_directories = s_dirs_Darwin
+if sys_name == 'supercomp'  : s_directories = s_dirs_supercomp
     
 
 def trim_im(im):
