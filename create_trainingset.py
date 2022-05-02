@@ -23,7 +23,7 @@ User inputs
 """
 
 sys_name = 'jesantos' #replace to Darwin if running in the cluster
-#sys_name = 'supercomp' #replace to Darwin if running in the cluster
+#sys_name = 'supercomp' #replace to your supercomputer name if running in the cluster
 
 # Create random examples
 num_cases = 100000000 #number of examples to run
